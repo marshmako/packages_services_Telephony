@@ -729,7 +729,7 @@ public class MobileNetworkSettings extends PreferenceActivity
         mButtonDataRoam.setChecked(mPhone.getDataRoamingEnabled());
         mButtonNationalDataRoam.setChecked(android.provider.Settings.System.getInt(
                 mPhone.getContext().getContentResolver(),
-                android.provider.Settings.System.MVNO_ROAMING, 0) == 1);
+                android.provider.Settings.System.MVNO_ROAMING, 1) == 1);
 
         mButtonEnabledNetworks.setValue(Integer.toString(settingsNetworkMode));
         mButtonPreferredNetworkMode.setValue(Integer.toString(settingsNetworkMode));
